@@ -1,0 +1,31 @@
+{
+  "name": "fs-starter",
+  "version": "1.0.0",
+  "description": "A modern fullstack monorepo starter with React, Hono, and PostgreSQL.",
+  "scripts": {
+    "dev": "pnpm run --parallel dev",
+    "build": "pnpm run -r build",
+    "lint": "pnpm -r --no-bail lint",
+    "typecheck": "pnpm -r --no-bail typecheck",
+    "db:studio": "pnpm --filter api db:studio",
+    "db:push": "pnpm --filter api db:push",
+    "db:seed": "pnpm --filter api db:seed",
+    "db:generate": "pnpm --filter api db:generate",
+    "db:migrate": "pnpm --filter api db:migrate",
+    "start": "cd packages/api && pnpm start"
+  },
+  "keywords": [
+    "monorepo",
+    "fullstack",
+    "react",
+    "hono",
+    "postgresql",
+    "vite",
+    "drizzle",
+    "typescript",
+    "starter"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0"
+}

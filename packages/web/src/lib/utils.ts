@@ -1,0 +1,9 @@
+import { twMerge } from "tailwind-merge";
+import { clsx } from "clsx";
+import type { ClassValue } from "clsx";
+
+export const cn = (...classes: Array<ClassValue>) => {
+  return twMerge(clsx(classes));
+};
+
+export const wait = () => new Promise((resolve) => setTimeout(resolve, 1000));
